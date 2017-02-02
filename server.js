@@ -44,6 +44,10 @@ app.get('/app.js', function(req, res){
   res.sendFile(path.join(__dirname, 'app.js'));
 })
 
+app.get('/style.css', function(req, res){
+  res.sendFile(path.join(__dirname, 'style.css'));
+})
+
 app.get('/table', function(req, res){
   res.sendFile(path.join(__dirname, 'view_tables.html'));
 
